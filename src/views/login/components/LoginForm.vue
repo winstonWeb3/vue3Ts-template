@@ -1,7 +1,7 @@
 <template>
 	<el-form ref="loginFormRef" :model="loginForm" :rules="loginRules" size="large">
 		<el-form-item prop="username">
-			<el-input v-model="loginForm.username" placeholder="用户名：system / user">
+			<el-input v-model="loginForm.username" placeholder="用户名：admin / user">
 				<template #prefix>
 					<el-icon class="el-input__icon"><user /></el-icon>
 				</template>
@@ -15,12 +15,21 @@
 			</el-input>
 		</el-form-item>
 	</el-form>
-	<div class="login-btn">
-		<el-button :icon="CircleClose" round @click="resetForm(loginFormRef)" size="large">重置</el-button>
-		<el-button :icon="UserFilled" round @click="login(loginFormRef)" size="large" type="primary" :loading="loading">
-			登录
-		</el-button>
+	<div class="remenber">
+			<el-checkbox v-model="remenber">记住我</el-checkbox>
+			<el-button link type="primary">忘记密码？</el-button>
 	</div>
+	<div class="login-btn">
+			<!-- <el-button :icon="Aim" round @click="resetForm(loginFormRef)" size="large">注册</el-button> -->
+			<el-button :icon="UserFilled" round @click="login(loginFormRef)" size="large" type="primary" :loading="loading">
+				登录
+			</el-button>
+		</div>
+	<div class="other-login">
+			<el-button block class="child-login"> 手机登录 </el-button>
+			<el-button block class="child-login"> 二维码登录 </el-button>
+			<el-button block class="child-login" @click="showRegister(false)"> 注册 </el-button>
+		</div>
 </template>
 
 <script setup lang="ts">
@@ -41,7 +50,7 @@ import md5 from "js-md5";
 const router = useRouter();
 const tabsStore = TabsStore();
 const globalStore = GlobalStore();
-
+const remenber = ref(false)
 // 定义 formRef（校验规则）
 type FormInstance = InstanceType<typeof ElForm>;
 const loginFormRef = ref<FormInstance>();
@@ -81,6 +90,13 @@ const login = (formEl: FormInstance | undefined) => {
 		}
 	});
 };
+// 注册
+const emit = defineEmits(["showLogin"]);
+const showLogin = ref(true);
+function showRegister(val: boolean) {
+	emit("showLogin", val);
+	showLogin.value = val;
+}
 
 // resetForm
 const resetForm = (formEl: FormInstance | undefined) => {
@@ -102,4 +118,19 @@ onMounted(() => {
 
 <style scoped lang="scss">
 @import "../index.scss";
+
+.remenber {
+	display: flex;
+	justify-content: space-between;
+
+	// padding: 20px 0;
+}
+.other-login {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	.child-login {
+		padding: 15px 20px;
+	}
+}
 </style>
