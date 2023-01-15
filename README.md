@@ -29,6 +29,10 @@ axios  echarts  element-plus nprogress  pinia  pinia-plugin-persistedstate  vue-
 
 ![banner](https://i.postimg.cc/MKSLGX9R/1673491365805.png)
 
+#### 5.锁屏功能 设置了屏幕不操作 30 分钟锁屏和手动锁屏功能
+
+![lockScreen](https://i.postimg.cc/28BqJyps/image.png)
+
 ### 文件资源目录 📚
 
 ```text
