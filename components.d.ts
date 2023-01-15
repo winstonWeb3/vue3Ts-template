@@ -57,6 +57,8 @@ declare module '@vue/runtime-core' {
     Imgs: typeof import('./src/components/Upload/Imgs.vue')['default']
     ImportExcel: typeof import('./src/components/ImportExcel/index.vue')['default']
     Loading: typeof import('./src/components/Loading/index.vue')['default']
+    Lock: typeof import('./src/components/lock/index.vue')['default']
+    LockPage: typeof import('./src/components/lock/LockPage.vue')['default']
     Lottie: typeof import('./src/components/lottie/index.vue')['default']
     Pagination: typeof import('./src/components/ProTable/components/Pagination.vue')['default']
     ProTable: typeof import('./src/components/ProTable/index.vue')['default']

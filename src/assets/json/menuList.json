@@ -16,6 +16,20 @@
 			}
 		},
 		{
+			"path": "/bugpoints/index",
+			"name": "bugpoints",
+			"component": "/bugpoints/index",
+			"meta": {
+				"icon": "HomeFilled",
+				"title": "埋点",
+				"isLink": "",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": true,
+				"isKeepAlive": true
+			}
+		},
+		{
 			"path": "/proTable",
 			"name": "proTable",
 			"redirect": "/proTable/useProTable",
@@ -111,20 +125,6 @@
 						"icon": "Menu",
 						"title": "复杂 ProTable",
 						"isLink": "",
-						"isHide": false,
-						"isFull": false,
-						"isAffix": false,
-						"isKeepAlive": true
-					}
-				},
-				{
-					"path": "/proTable/document",
-					"name": "document",
-					"component": "/proTable/document/index",
-					"meta": {
-						"icon": "Menu",
-						"title": "ProTable 文档",
-						"isLink": "https://juejin.cn/post/7166068828202336263/#heading-14",
 						"isHide": false,
 						"isFull": false,
 						"isAffix": false,

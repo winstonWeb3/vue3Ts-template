@@ -48,6 +48,13 @@ export const GlobalStore = defineStore({
 	}),
 	getters: {},
 	actions: {
+		logout() {
+			console.log(11);
+			this.token = "";
+			this.userInfo = "";
+			localStorage.clear();
+			sessionStorage.clear();
+		},
 		// setToken
 		setToken(token: string) {
 			this.token = token;

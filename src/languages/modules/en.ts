@@ -23,6 +23,7 @@ export default {
 		exitFullScreen: "Exit Full Screen",
 		personalData: "Personal Data",
 		changePassword: "Change Password",
-		logout: "Logout"
+		logout: "Logout",
+		lockScreen: "Lock screen"
 	}
 };

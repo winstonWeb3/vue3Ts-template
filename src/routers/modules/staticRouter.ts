@@ -18,6 +18,14 @@ export const staticRouter: RouteRecordRaw[] = [
 		}
 	},
 	{
+		path: "/lockPage",
+		name: "lockPage",
+		component: () => import("@/components/lock/index.vue"),
+		meta: {
+			title: "锁屏",
+		}
+	},
+	{
 		path: "/layout",
 		name: "layout",
 		component: () => import("@/layouts/index.vue"),

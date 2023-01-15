@@ -11,6 +11,9 @@
 				<el-dropdown-item @click="openDialog('passwordRef')">
 					<el-icon><Edit /></el-icon>{{ $t("header.changePassword") }}
 				</el-dropdown-item>
+				<el-dropdown-item @click="openDialog('lockScreen')">
+					<el-icon><Unlock /></el-icon>{{ $t("header.lockScreen") }}</el-dropdown-item>
+				
 				<el-dropdown-item @click="logout" divided>
 					<el-icon><SwitchButton /></el-icon>{{ $t("header.logout") }}
 				</el-dropdown-item>
@@ -21,6 +24,8 @@
 	<InfoDialog ref="infoRef"></InfoDialog>
 	<!-- passwordDialog -->
 	<PasswordDialog ref="passwordRef"></PasswordDialog>
+		<!-- lockScreen -->
+		<lockScreen ref="lockScreenRef"></lockScreen>
 </template>
 
 <script setup lang="ts">
@@ -32,6 +37,7 @@ import { useRouter } from "vue-router";
 import { ElMessageBox, ElMessage } from "element-plus";
 import InfoDialog from "./InfoDialog.vue";
 import PasswordDialog from "./PasswordDialog.vue";
+import lockScreen from "./lockScreen.vue";
 
 const router = useRouter();
 const globalStore = GlobalStore();
@@ -58,9 +64,11 @@ interface DialogExpose {
 }
 const infoRef = ref<null | DialogExpose>(null);
 const passwordRef = ref<null | DialogExpose>(null);
+const lockScreenRef = ref<null | DialogExpose>(null);
 // 打开修改密码和个人信息弹窗
 const openDialog = (refName: string) => {
 	if (refName == "infoRef") infoRef.value?.openDialog();
+	else if (refName == "lockScreen") return lockScreenRef.value?.openDialog();
 	else passwordRef.value?.openDialog();
 };
 </script>
