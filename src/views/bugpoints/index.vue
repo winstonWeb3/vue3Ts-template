@@ -22,7 +22,6 @@ onBeforeUnmount(()=>{
 	// 	});
   clearInterval(myTime)
 })
-\
 </script>
 
 <style lang="scss" scoped>
