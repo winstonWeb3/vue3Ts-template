@@ -1,3 +1,7 @@
+## 简介
+
+vue-element-system 是一个后台前端解决方案,它使用了最新的前端技术栈、动态路由，权限验证，并且有着丰富的组件,企业级中后台解决方案，可免费商用，同时支持PC、平板、手机，请大家帮忙点个start,欢迎大家一起共同建设和维护
+
 # Vue 3 + TypeScript + Vite3
 
 yarn install 或者 npm install
@@ -15,7 +19,7 @@ axios  echarts  element-plus nprogress  pinia  pinia-plugin-persistedstate  vue-
 
 #### 2、首页
 
-![banner](https://i.postimg.cc/Gmv6QG9X/1673491299592.png)
+![banner](https://i.postimg.cc/jS8VmxLZ/1673790842186.png)
 
 #### 3、功能栏
 
