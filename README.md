@@ -15,11 +15,11 @@ axios  echarts  element-plus nprogress  pinia  pinia-plugin-persistedstate  vue-
 
 #### 1、登录页
 
-![banner](https://i.postimg.cc/k4RQQFg4/1673491247305.png)
+![banner](https://i.postimg.cc/K8ZpbKvj/1673873948633.png)
 
 #### 2、首页
 
-![banner](https://i.postimg.cc/jS8VmxLZ/1673790842186.png)
+![banner](https://i.postimg.cc/zXqFbsmP/1673873983040.png)
 
 #### 3、功能栏
 
