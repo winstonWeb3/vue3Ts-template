@@ -3,7 +3,7 @@
 	<el-container class="layout">
 		<el-header>
 			<div class="logo flx-center">
-				<img src="@/assets/images/logo.svg" alt="logo" />
+				<img src="@/assets/icon/logo.svg" alt="logo" />
 				<span>susu system</span>
 			</div>
 			<el-menu

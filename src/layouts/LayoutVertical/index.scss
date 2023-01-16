@@ -4,8 +4,8 @@
 	.el-aside {
 		width: auto;
 		overflow: inherit;
-		background-color: #191a20;
-		border-right: 1px solid #191a20;
+		background-color: #f5f6fa;
+		border-right: 1px solid #f5f6fa;
 		.menu {
 			display: flex;
 			flex-direction: column;
@@ -21,15 +21,17 @@
 			.logo {
 				box-sizing: border-box;
 				height: 55px;
-				border-bottom: 1px solid #282a35;
+				border-bottom: 1px solid #f5f6fa;
 				span {
 					font-size: 21.5px;
 					font-weight: bold;
-					color: #dadada;
+					color: #333;
 					white-space: nowrap;
 				}
 				img {
 					width: 28px;
+					height: 28px;
+					border-radius: 50%;
 					object-fit: contain;
 					margin-right: 6px;
 				}

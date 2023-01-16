@@ -18,21 +18,21 @@ export const staticRouter: RouteRecordRaw[] = [
 		}
 	},
 	{
-		path: "/lockPage",
-		name: "lockPage",
-		component: () => import("@/components/lock/index.vue"),
-		meta: {
-			title: "锁屏",
-		}
-	},
-	{
 		path: "/layout",
 		name: "layout",
 		component: () => import("@/layouts/index.vue"),
 		// component: () => import("@/layouts/indexAsync.vue"),
 		redirect: HOME_URL,
 		children: []
-	}
+	},
+	{
+		path: "/lockPage",
+		name: "lockPage",
+		component: () => import("@/components/lockPage/index.vue"),
+		meta: {
+			title: "锁屏",
+		}
+	},
 ];
 
 /**

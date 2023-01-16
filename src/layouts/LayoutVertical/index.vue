@@ -4,8 +4,8 @@
 		<el-aside>
 			<div class="menu" :style="{ width: isCollapse ? '65px' : '210px' }">
 				<div class="logo flx-center">
-					<img src="@/assets/images/logo.svg" alt="logo" />
-					<span v-show="!isCollapse">susu system</span>
+					<img src="@/assets/images/avatar.gif" alt="logo" />
+					<span v-show="!isCollapse">system</span>
 				</div>
 				<el-scrollbar>
 					<el-menu
@@ -14,9 +14,9 @@
 						:collapse="isCollapse"
 						:collapse-transition="false"
 						:unique-opened="true"
-						background-color="#191a20"
-						text-color="#bdbdc0"
-						active-text-color="#ffffff"
+						background-color="#f5f6f8"
+						text-color="#999"
+						active-text-color="#999"
 					>
 						<SubMenu :menuList="menuList" />
 					</el-menu>
@@ -63,7 +63,7 @@ const isCollapse = computed(() => globalStore.themeConfig.isCollapse);
 	.el-menu--popup {
 		.el-menu-item {
 			&.is-active {
-				background: #060708;
+				background: #dfe6ed;
 				&::before {
 					position: absolute;
 					top: 0;

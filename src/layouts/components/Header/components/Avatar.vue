@@ -1,7 +1,7 @@
 <template>
 	<el-dropdown trigger="click">
 		<div class="avatar">
-			<img src="@/assets/images/avatar.gif" alt="avatar" />
+			<img src="@/assets/images/photo.svg" alt="avatar" />
 		</div>
 		<template #dropdown>
 			<el-dropdown-menu>
